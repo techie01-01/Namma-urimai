@@ -1,6 +1,8 @@
 /* Namma Urimai — no frameworks, no trackers, no personal-data persistence. */
 /* 10-MIN FIX */
 global.window = global;
+global.addEventListener = () => {};
+global.removeEventListener = () => {};
 const fakeEl = () => ({
   style: {}, appendChild: () => {}, addEventListener: () => {}, removeEventListener: () => {},
   setAttribute: () => {}, getAttribute: () => null, classList: { add: () => {}, remove: () => {} },

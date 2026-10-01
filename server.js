@@ -1,4 +1,6 @@
 global.window = global;
+global.addEventListener = () => {};
+global.removeEventListener = () => {};
 const fakeEl = () => ({
   style: {}, appendChild: () => {}, addEventListener: () => {}, removeEventListener: () => {},
   setAttribute: () => {}, getAttribute: () => null, classList: { add: () => {}, remove: () => {} },
