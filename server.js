@@ -1,6 +1,7 @@
 global.window = global;
 global.addEventListener = () => {};
-global.removeEventListener = () => {};
+global.removeEventListener = () => {};global.i18n = { init: () => {}, use: () => {}, t: () => '', language: 'en' };
+global.navigator = { userAgent: 'node', platform: 'node', language: 'en', languages: ['en'] };
 const fakeEl = () => ({
   style: {}, appendChild: () => {}, addEventListener: () => {}, removeEventListener: () => {},
   setAttribute: () => {}, getAttribute: () => null, classList: { add: () => {}, remove: () => {} },
