@@ -1,3 +1,12 @@
+/* 10-MIN FIX */
+if (typeof global !== 'undefined' && typeof global.window === 'undefined') {
+  global.window = global;
+  global.document = { createElement: () => ({}), title: '', body: { appendChild: () => {} }, getElementById: () => null, querySelector: () => null };
+  global.navigator = { userAgent: 'node' };
+  global.localStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} };
+  global.screen = { width: 1024, height: 768 };
+}
+
 const http = require("node:http");
 const fs = require("node:fs");
 const path = require("node:path");
