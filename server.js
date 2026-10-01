@@ -1,11 +1,24 @@
-/* 10-MIN FIX */
-if (typeof global !== 'undefined' && typeof global.window === 'undefined') {
-  global.window = global;
-  global.document = { createElement: () => ({}), title: '', body: { appendChild: () => {} }, getElementById: () => null, querySelector: () => null };
-  global.navigator = { userAgent: 'node' };
-  global.localStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} };
-  global.screen = { width: 1024, height: 768 };
-}
+global.window = global;
+const fakeEl = () => ({
+  style: {}, appendChild: () => {}, addEventListener: () => {}, removeEventListener: () => {},
+  setAttribute: () => {}, getAttribute: () => null, classList: { add: () => {}, remove: () => {} },
+  innerHTML: '', textContent: '', tagName: 'DIV', querySelector: () => null, querySelectorAll: () => []
+});
+global.document = {
+  createElement: (t) => fakeEl(),
+  title: '', body: { appendChild: () => {}, style: {}, innerHTML: '' },
+  head: { appendChild: () => {}, style: {} },
+  documentElement: fakeEl(),
+  getElementById: () => fakeEl(),
+  querySelector: () => fakeEl(),
+  querySelectorAll: () => [fakeEl()]
+};
+global.navigator = { userAgent: 'node', platform: 'node' };
+global.localStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} };
+global.screen = { width: 1024, height: 768 };
+global.matchMedia = () => ({ matches: false, addListener: () => {}, removeListener: () => {} });
+global.requestAnimationFrame = (cb) => setTimeout(cb, 16);
+global.cancelAnimationFrame = (id) => clearTimeout(id);
 
 const http = require("node:http");
 const fs = require("node:fs");
