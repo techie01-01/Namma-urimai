@@ -1,6 +1,8 @@
 /* Namma Urimai — no frameworks, no trackers, no personal-data persistence. */
 /* 10-MIN FIX */
 global.window = global;
+global.i18n = { init: () => {}, use: () => ({ t: (k) => k, language: 'en' }), t: (k) => k, language: 'en', changeLanguage: () => {}, addResourceBundle: () => {}, loadNamespaces: () => Promise.resolve() };
+global.navigator = { userAgent: 'node', platform: 'node', language: 'en', languages: ['en'] };
 global.i18n = { init: () => {}, use: () => {}, t: () => '' };
 global.navigator = { userAgent: 'node', platform: 'node', language: 'en', languages: ['en'] };
 global.removeEventListener = () => {};
