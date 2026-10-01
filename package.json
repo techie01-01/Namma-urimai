@@ -4,9 +4,10 @@
   "private": true,
   "description": "A multilingual, voice-friendly public-service guide across five South Indian states.",
   "scripts": {
-    "build": "echo Static build"
+    "build": "echo Build complete"
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "main": "server.js"
 }
