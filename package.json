@@ -1,0 +1,14 @@
+{
+  "name": "namma-urimai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A multilingual, voice-friendly public-service guide across five South Indian states.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check app.js && node --check multi-state.js && node --check server.js && node --check api/chat.js && node --check api/speech.js && node --check sw.js && node tests/check-project.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

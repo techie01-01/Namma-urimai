@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ta">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="நம்ம உரிமை — ஐந்து தென் மாநிலங்களின் பொதுச் சேவைகளை, தெரிந்த மொழியில் புரிந்துகொள்ள உதவும் எளிய குரல் மற்றும் உரை வழிகாட்டி. அரசுத் தளம் அல்ல.">
+  <meta property="og:title" content="நம்ம உரிமை — உங்கள் மாநிலம், உங்கள் மொழி">
+  <meta property="og:description" content="தமிழ்நாடு, கேரளம், கர்நாடகம், ஆந்திரப் பிரதேசம், தெலங்கானா ஆகிய மாநிலங்களுக்கான எளிய மொழி மற்றும் குரல் வழிகாட்டி.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <title>நம்ம உரிமை — உங்கள் மாநிலம், உங்கள் மொழி</title>
+  <script defer src="/multi-state.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-flower" viewBox="0 0 48 48"><path d="M24 7c4.1 0 6.2 5.2 4.6 9.3 4.1-1.6 9.3.5 9.3 4.6s-5.2 6.2-9.3 4.6c1.6 4.1-.5 9.3-4.6 9.3s-6.2-5.2-4.6-9.3c-4.1 1.6-9.3-.5-9.3-4.6s5.2-6.2 9.3-4.6C17.8 12.2 19.9 7 24 7Z"/><circle cx="24" cy="21" r="4.2"/><path d="M24 35v7m-5 0h10"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.1-3.4 8.3-8 10-4.6-1.7-8-4.9-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></symbol>
+    <symbol id="i-ear" viewBox="0 0 24 24"><path d="M7 10V8a5 5 0 0 1 10 0c0 3.2-3.5 4.1-3.5 7.1 0 1.3-.9 2.4-2.2 2.4a2.2 2.2 0 0 1-2.2-2.2"/><path d="M9 10.5a3 3 0 0 1 6 0c0 1.8-2 2.3-2 4"/><path d="M12 21v.1"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 .8.8L6 5m-2.5 7 .8.8L6 11m-2.5 7 .8.8L6 17"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.5 8.5 0 0 1-3.4-.7L4 20l1.2-3.5A7 7 0 0 1 4 12c0-4.1 3.6-7 8-7s8 2.4 8 6.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 18v3m-4 0h8"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="M17 9a5 5 0 0 1 0 6m2.5-8.5a8.5 8.5 0 0 1 0 11"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m21 3-7.2 18-3.3-7.5L3 10.2 21 3Z"/><path d="M10.5 13.5 21 3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20M8 7h8m-8 4h7"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.2-8.8 11.1-8.8 11.1S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 1.7 7 7 3-7 2-1.7 8-2-8-7-2 7-3 2-7Z"/><path d="m19 2 .8 2.2L22 5l-2.2.8L19 8l-.8-2.2L16 5l2.2-.8L19 2Z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8a15 15 0 0 1 20 0M5 11.5a10 10 0 0 1 14 0M8.5 15a5 5 0 0 1 7 0M12 19h.01"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">உள்ளடக்கத்துக்குச் செல்ல</a>
+  <div class="topline">
+    <div class="topline-inner">
+      <div class="topline-left"><span class="live-dot"></span><span data-i18n="toplineLeft">தமிழ்நாடு · கேரளம் · கர்நாடகம் · ஆந்திரம் · தெலங்கானா</span></div>
+      <span class="topline-right" data-i18n="toplineRight">5 மாநிலங்களில் பெண்களுக்கு வழிகாட்டி · அரசு தளம் அல்ல</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="நம்ம உரிமை — முகப்புக்குச் செல்ல">
+      <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-flower"/></svg></span>
+      <span class="brand-name"><strong>நம்ம உரிமை</strong><small data-i18n="brandSub">ஒரு உரிமை. ஒரு எளிய வழி.</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="முதன்மை வழிசெலுத்தல்">
+      <a href="#how" data-i18n="navHow">இது எப்படி உதவும்?</a>
+      <a href="#ask" data-i18n="navAsk">கேள்வி கேள்</a>
+      <a href="#trust" data-i18n="navTrust">நம்பிக்கை & தனியுரிமை</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-picker" for="languageSelect"><span class="language-picker-mark" aria-hidden="true">Aa</span><span class="visually-hidden" data-i18n="languageLabel">மொழி</span>
+        <select id="languageSelect" aria-label="மொழியைத் தேர்ந்தெடுக்கவும்">
+          <option value="ta" selected>தமிழ்</option>
+          <option value="ml">മലയാളം</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="te">తెలుగు</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+      <a class="header-cta" href="#ask"><span data-i18n="navStart">தொடங்கலாம்</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-star"><svg><use href="#i-spark"/></svg></span><span id="heroKicker" data-i18n="heroKicker">கலைஞர் மகளிர் உரிமைத் திட்டம் · எளிய தமிழ்</span></div>
+        <h1 id="heroTitle" data-i18n-html="heroTitle">உங்கள் உரிமை,<br><span>உங்கள் குரலில்.</span></h1>
+        <p class="hero-lede" data-i18n="heroBody">கலைஞர் மகளிர் உரிமைத் திட்டத்தைப் புரிந்துகொள்ள யாரையும் காத்திருக்க வேண்டாம். தகுதியைப் பாருங்கள், அடுத்த படியைக் கேளுங்கள்—உங்கள் வேகத்தில்.</p>
+        <div class="hero-buttons">
+          <button class="button button-primary" id="startCheck" type="button"><span data-i18n="heroPrimary">என் தகுதியைப் பார்ப்போம்</span><svg><use href="#i-arrow"/></svg></button>
+          <a class="button button-quiet" href="#ask"><span class="button-play"><svg><use href="#i-ear"/></svg></span><span data-i18n="heroSecondary">பேசிக் கேட்க</span></a>
+        </div>
+        <div class="hero-reassure"><span class="check-burst"><svg><use href="#i-check"/></svg></span><span data-i18n="heroReassure">கணக்கு வேண்டாம். ஆங்கிலம் வேண்டாம். உதவி கேட்க யாரும் வேண்டாம்.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="கிராமத்தில் கைப்பேசியைப் பயன்படுத்தும் பெண்ணின் ஓவியம்">
+        <div class="hero-visual-orbit orbit-one"></div><div class="hero-visual-orbit orbit-two"></div>
+        <div class="portrait-card">
+          <img id="heroImage" src="/assets/hero-woman.jpg" alt="கிராம வீட்டின் வாசலில் அமைதியாக கைப்பேசியைப் பயன்படுத்தும் தமிழ்ப் பெண்" fetchpriority="high">
+          <div class="portrait-caption"><span class="caption-mark"><svg><use href="#i-flower"/></svg></span><span data-i18n="imageCaption">தெரிந்த மொழி.<br>தெளிவான அடுத்த படி.</span></div>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon"><svg><use href="#i-heart"/></svg></span>
+          <span class="benefit-copy"><strong id="benefitAmount" data-i18n="benefitAmount">₹1,000 <small>/ மாதம்</small></strong><span id="benefitLabel" data-i18n="benefitLabel">தகுதி பெற்ற குடும்பத் தலைவிக்கு</span></span>
+          <span class="benefit-spark">✳</span>
+        </div>
+        <div class="float-note"><span class="float-note-dot"></span><span data-i18n="floatNote">முதலில் கேளுங்கள்.<br>பிறகு முடிவு செய்யுங்கள்.</span></div>
+        <div class="hero-voice-prompts" aria-label="மொழியில் கேள்வி கேளுங்கள்">
+          <button class="voice-prompt prompt-ta" type="button" data-prompt-lang="ta" data-prompt="விண்ணப்பம் எப்படி?" aria-label="தமிழில் கேள்: விண்ணப்பம் எப்படி?"><span class="voice-prompt-script">தமிழ்</span><span>விண்ணப்பம் எப்படி?</span><svg><use href="#i-mic"/></svg></button>
+          <button class="voice-prompt prompt-ml" type="button" data-prompt-lang="ml" data-prompt="എനിക്ക് എങ്ങനെ അപേക്ഷിക്കാം?" aria-label="മലയാളത്തിൽ ചോദിക്കുക: എങ്ങനെ അപേക്ഷിക്കാം?"><span class="voice-prompt-script">മലയാളം</span><span>എങ്ങനെ അപേക്ഷിക്കാം?</span><svg><use href="#i-mic"/></svg></button>
+          <button class="voice-prompt prompt-kn" type="button" data-prompt-lang="kn" data-prompt="ನಾನು ಅರ್ಹಳೇ?" aria-label="ಕನ್ನಡದಲ್ಲಿ ಕೇಳಿ: ನಾನು ಅರ್ಹಳೇ?"><span class="voice-prompt-script">ಕನ್ನಡ</span><span>ನಾನು ಅರ್ಹಳೇ?</span><svg><use href="#i-mic"/></svg></button>
+          <button class="voice-prompt prompt-te" type="button" data-prompt-lang="te" data-prompt="నా వివరాలు సురక్షితమేనా?" aria-label="తెలుగులో అడగండి: నా వివరాలు సురక్షితమేనా?"><span class="voice-prompt-script">తెలుగు</span><span>నా వివరాలు సురక్షితమేనా?</span><svg><use href="#i-mic"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-ribbon" aria-label="தனியுரிமை அம்சங்கள்">
+      <div class="wrap trust-ribbon-inner">
+        <div class="ribbon-intro"><svg><use href="#i-shield"/></svg><span data-i18n="ribbonTitle">உங்கள் முக்கிய எண்கள், உங்களிடமே.</span></div>
+        <div class="ribbon-points"><span><b>01</b><span data-i18n="ribbonOne">ஆதார் / OTP கேட்காது</span></span><span><b>02</b><span data-i18n="ribbonTwo">இந்தச் செயலியில் சேமிக்காது</span></span><span><b>03</b><span data-i18n="ribbonThree">நீங்களே முடிவு செய்கிறீர்கள்</span></span></div>
+      </div>
+    </section>
+
+    <section class="state-section wrap" id="states" aria-labelledby="stateTitle">
+      <div class="state-heading">
+        <div><div class="section-kicker"><span>01</span><span data-i18n="stateKicker">5 மாநிலங்களில் · 5 வழிகாட்டிகள்</span></div><h2 id="stateTitle" data-i18n-html="stateTitle">உங்கள் மாநிலம்.<br><em>உங்கள் திட்டம்.</em></h2></div>
+        <p data-i18n="stateIntro">மாநிலத்தைத் தேர்ந்தெடுக்கவும். ஒவ்வொரு அட்டையும் அந்த மாநிலத்தின் அதிகாரப்பூர்வ திட்டம் அல்லது சேவைப் பாதைக்கு இணைக்கும்.</p>
+      </div>
+      <div class="state-grid" id="stateGrid" aria-live="polite"></div>
+      <p class="state-honesty" data-i18n="stateHonesty">இது சுயாதீன வழிகாட்டி. அரசுத் தளம் அல்ல; விண்ணப்பத்தைச் சமர்ப்பிக்காது. நடப்பு விதிகளை அதிகாரப்பூர்வ இணைப்பில் சரிபார்க்கவும்.</p>
+    </section>
+
+    <section class="featured-voices wrap" aria-labelledby="voicesTitle">
+      <div class="voices-heading"><div><div class="section-kicker"><span>02</span><span data-i18n="voicesKicker">குரல் வழிகாட்டிகள்</span></div><h2 id="voicesTitle" data-i18n-html="voicesTitle">உங்களுக்குப் பிடித்த<br><em>குரலைத் தேர்ந்தெடுங்கள்.</em></h2></div><p data-i18n="voicesBody">ஒரு மாதிரி வணக்கத்தைக் கேளுங்கள். ஒலி உங்கள் சாதனத்தின் குரல் வசதியைப் பொறுத்தது.</p></div>
+      <div class="voice-guide-grid">
+        <article class="voice-guide-card"><span class="voice-avatar avatar-ta">மீ</span><div class="voice-guide-copy"><strong>Meena</strong><span data-i18n="voiceTamil">தமிழ் · Tamil</span></div><button type="button" class="voice-play" data-guide-lang="ta" aria-label="Meena Tamil voice sample"><svg><use href="#i-volume"/></svg><span data-i18n="playSample">கேள்</span></button></article>
+        <article class="voice-guide-card"><span class="voice-avatar avatar-ml">അ</span><div class="voice-guide-copy"><strong>Anu</strong><span data-i18n="voiceMalayalam">മലയാളം · Malayalam</span></div><button type="button" class="voice-play" data-guide-lang="ml" aria-label="Anu Malayalam voice sample"><svg><use href="#i-volume"/></svg><span data-i18n="playSample">கேள்</span></button></article>
+        <article class="voice-guide-card"><span class="voice-avatar avatar-kn">ಕ</span><div class="voice-guide-copy"><strong>Kavya</strong><span data-i18n="voiceKannada">ಕನ್ನಡ · Kannada</span></div><button type="button" class="voice-play" data-guide-lang="kn" aria-label="Kavya Kannada voice sample"><svg><use href="#i-volume"/></svg><span data-i18n="playSample">கேள்</span></button></article>
+        <article class="voice-guide-card"><span class="voice-avatar avatar-te">శ్రీ</span><div class="voice-guide-copy"><strong>Sravani</strong><span data-i18n="voiceTelugu">తెలుగు · Telugu</span></div><button type="button" class="voice-play" data-guide-lang="te" aria-label="Sravani Telugu voice sample"><svg><use href="#i-volume"/></svg><span data-i18n="playSample">கேள்</span></button></article>
+        <article class="voice-guide-card"><span class="voice-avatar avatar-en">A</span><div class="voice-guide-copy"><strong>Asha</strong><span data-i18n="voiceEnglish">English</span></div><button type="button" class="voice-play" data-guide-lang="en" aria-label="Asha English voice sample"><svg><use href="#i-volume"/></svg><span data-i18n="playSample">கேள்</span></button></article>
+      </div>
+      <div class="voice-settings">
+        <p id="voiceModeStatus" class="voice-mode-status" aria-live="polite" data-i18n="voiceModeDevice">சாதனத்தின் பொருந்தும் குரல் பயன்படுத்தப்படுகிறது.</p>
+        <label id="deviceVoiceToggleWrap" class="voice-mode-choice" hidden><input id="useDeviceVoice" type="checkbox"><span data-i18n="useDeviceVoice">Google ஆன்லைன் குரலுக்குப் பதில் சாதனக் குரலைப் பயன்படுத்து</span></label>
+        <label id="deviceVoicePickerWrap" class="device-voice-picker" hidden><span data-i18n="voicePickerLabel">இந்த மொழிக்கான சாதனக் குரல்</span><select id="deviceVoiceSelect"></select></label>
+      </div>
+      <p class="voice-disclaimer" data-i18n="voiceDisclaimer">மைக் ஒலியை உலாவி செயலாக்கலாம். ஆன்லைன் குரல் தேர்ந்தெடுக்கப்பட்டால், ஒலிக்குறியை அழுத்தும்போது உரை Google-க்கு அனுப்பப்படும். இந்தச் செயலி உரையாடல் அல்லது ஒலியைச் சேமிக்காது.</p>
+    </section>
+
+    <section class="section wrap" id="how" aria-labelledby="howTitle">
+      <div class="section-heading">
+        <div><div class="section-kicker"><span>03</span><span data-i18n="howKicker">ஒரே திட்டம். முழு தெளிவு.</span></div><h2 id="howTitle" data-i18n-html="howTitle">தொடங்க மூன்று<br><em>எளிய வழிகள்.</em></h2></div>
+        <p data-i18n="howBody">முதன்முறையா? பரவாயில்லை. எந்தப் பொத்தானைத் தேர்ந்தெடுத்தாலும், ஒவ்வொரு படியையும் எளிய வார்த்தைகளில் சொல்கிறோம்.</p>
+      </div>
+      <div class="journey-grid">
+        <article class="journey-card journey-card-highlight">
+          <div class="journey-top"><span class="journey-number">01</span><span class="journey-icon"><svg><use href="#i-check"/></svg></span></div>
+          <h3 data-i18n="cardOneTitle">தகுதி என்னவென்று<br>சேர்ந்து பார்ப்போம்</h3>
+          <p data-i18n="cardOneBody">ஏழு சிறிய கேள்விகள். தனிப்பட்ட எண்கள் எதுவும் கேட்கப்படாது.</p>
+          <button class="card-link" id="cardStartCheck" type="button"><span data-i18n="cardOneCta">தகுதி வழிகாட்டியைத் திற</span><svg><use href="#i-arrow"/></svg></button>
+        </article>
+        <article class="journey-card">
+          <div class="journey-top"><span class="journey-number">02</span><span class="journey-icon icon-sun"><svg><use href="#i-list"/></svg></span></div>
+          <h3 data-i18n="cardTwoTitle">அடுத்து என்ன<br>செய்ய வேண்டும்?</h3>
+          <p data-i18n="cardTwoBody">அருகிலுள்ள சரியான அரசு வழியை, படிப்படியாகத் தெரிந்துகொள்ளுங்கள்.</p>
+          <a class="card-link" href="#steps"><span data-i18n="cardTwoCta">மூன்று படிகளைப் பார்</span><svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="journey-card">
+          <div class="journey-top"><span class="journey-number">03</span><span class="journey-icon icon-coral"><svg><use href="#i-chat"/></svg></span></div>
+          <h3 data-i18n="cardThreeTitle">உங்கள் கேள்வி.<br>உங்கள் மொழியில்.</h3>
+          <p data-i18n="cardThreeBody">தட்டச்சு செய்யுங்கள் அல்லது மைக்கைத் தொட்டு பேசுங்கள். பதில் சுருக்கமாக வரும்.</p>
+          <a class="card-link" href="#ask"><span data-i18n="cardThreeCta">தோழியிடம் கேள்</span><svg><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+      <div class="journey-footnote"><span class="footnote-icon"><svg><use href="#i-spark"/></svg></span><span data-i18n="journeyFootnote">இந்த வழிகாட்டி விண்ணப்பம் அல்ல. முடிவு எப்போதும் அரசு அதிகாரிகளுடையது.</span></div>
+    </section>
+
+    <section class="steps-section" id="steps" aria-labelledby="stepsTitle">
+      <div class="wrap steps-layout">
+        <div class="steps-intro">
+          <div class="section-kicker section-kicker-light"><span>04</span><span data-i18n="stepsKicker">இன்றே தெரிந்து கொள்ளுங்கள்</span></div>
+          <h2 id="stepsTitle" data-i18n-html="stepsTitle">அரசு வழி<br><em>எளிதாக இருக்கட்டும்.</em></h2>
+          <p id="stepsBody" data-i18n="stepsBody">விண்ணப்பப் பதிவு முகாம் உங்கள் பகுதியில் தற்போது நடக்கிறதா என்பதை முதலில் உறுதிசெய்யுங்கள். தேதியும் நடைமுறையும் மாறக்கூடும்.</p>
+          <a class="button button-light" id="officialButton" href="https://kmut.tn.gov.in/" target="_blank" rel="noopener noreferrer"><span data-i18n="officialButton">அரசின் அதிகாரப்பூர்வ தளம்</span><svg><use href="#i-external"/></svg></a>
+          <div class="official-mark"><svg><use href="#i-shield"/></svg><span id="officialNote" data-i18n="officialNote">புதிய பதிவு திறந்திருப்பதை அரசு தளத்தில் உறுதிப்படுத்துங்கள்.</span></div>
+        </div>
+        <div class="steps-list">
+          <article class="step-item"><span class="step-number">01</span><div><h3 id="stepOneTitle" data-i18n="stepOneTitle">உங்கள் நியாயவிலைக் கடையில் கேளுங்கள்</h3><p id="stepOneBody" data-i18n="stepOneBody">உங்கள் குடும்ப அட்டை உள்ள ரேஷன் கடையில், மகளிர் உரிமைத் திட்டப் பதிவு முகாம் எப்போது என்று கேளுங்கள்.</p></div><span class="step-check"><svg><use href="#i-home"/></svg></span></article>
+          <article class="step-item"><span class="step-number">02</span><div><h3 id="stepTwoTitle" data-i18n="stepTwoTitle">தேவையானவற்றை அருகில் வையுங்கள்</h3><p id="stepTwoBody" data-i18n="stepTwoBody">குடும்ப அட்டை, ஆதார் அட்டை, வங்கிக் கணக்கு விவரம் ஆகியவற்றை எடுத்துச் செல்லுங்கள். வருமானம் அல்லது நிலத்திற்குத் தனிச் சான்று வாங்கத் தேவையில்லை என்று அரசின் வழிகாட்டி கூறுகிறது.</p></div><span class="step-check"><svg><use href="#i-list"/></svg></span></article>
+          <article class="step-item"><span class="step-number">03</span><div><h3 id="stepThreeTitle" data-i18n="stepThreeTitle">அரசு முகாமில் நேரடியாகப் பதிவு செய்யுங்கள்</h3><p id="stepThreeBody" data-i18n="stepThreeBody">பதிவு திறந்திருப்பதை உறுதி செய்து, அங்குள்ள அதிகாரியிடம் விண்ணப்பிக்க உதவி கேளுங்கள். உங்கள் ஆதார், OTP, வங்கி எண் ஆகியவற்றை இந்தச் செயலியில் ஒருபோதும் பகிர வேண்டாம்.</p></div><span class="step-check"><svg><use href="#i-check"/></svg></span></article>
+          <div class="step-smallprint"><span class="step-smallprint-dot"></span><span id="stepSmallprint" data-i18n="stepSmallprint">இந்தப் படிகள் புரிந்துகொள்ள உதவும் சுருக்கம்; தற்போதைய அறிவிப்பை அரசு தளத்தில் சரிபார்க்கவும்.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assistant-section wrap" id="ask" aria-labelledby="askTitle">
+      <div class="assistant-heading">
+        <div>
+          <div class="section-kicker"><span>05</span><span data-i18n="askKicker">உங்கள் குரலில் கேளுங்கள்</span></div>
+          <h2 id="askTitle" data-i18n-html="askTitle">கேட்பது சுலபம்.<br><em>புரிவதும் சுலபம்.</em></h2>
+          <p data-i18n="askBody">எளிய தமிழில் ஒரு கேள்வி கேளுங்கள். மைக் வேலை செய்யாவிட்டால், தட்டச்சு செய்யலாம்.</p>
+        </div>
+        <div class="voice-stamp"><svg><use href="#i-mic"/></svg><span data-i18n="voiceStamp">பேசலாம்.<br>தட்டச்சும் செய்யலாம்.</span></div>
+      </div>
+      <div class="chat-shell" id="chatShell">
+        <div class="chat-topbar">
+          <div class="helper-identity"><div class="helper-avatar"><svg><use href="#i-flower"/></svg></div><div><strong data-i18n="assistantName">உரிமைத் தோழி</strong><span class="assistant-status"><i class="status-dot"></i><span id="aiModeLabel" data-i18n="aiModeChecking">தயார் ஆகிறது…</span></span></div></div>
+          <button type="button" class="reset-chat" id="resetChat"><svg><use href="#i-spark"/></svg><span data-i18n="resetChat">புதிதாகத் தொடங்கு</span></button>
+        </div>
+        <div class="chat-body" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions text" aria-label="உரிமைத் தோழியுடன் உரையாடல்"></div>
+        <div class="suggestions" aria-label="மாதிரி கேள்விகள்">
+          <span data-i18n="suggestLabel">இதில் ஒன்றைக் கேளுங்கள்</span>
+          <div class="suggestion-list">
+            <button type="button" class="suggestion" data-intent="what" data-prompt-ta="இந்தத் திட்டம் என்ன?" data-prompt-en="What is this scheme?" data-prompt-ml="ഈ പദ്ധതി എന്താണ്?" data-prompt-kn="ಈ ಯೋಜನೆ ಏನು?" data-prompt-te="ఈ పథకం ఏమిటి?" data-i18n="suggestOne">இந்தத் திட்டம் என்ன?</button>
+            <button type="button" class="suggestion" data-intent="eligibility" data-prompt-ta="யார் விண்ணப்பிக்கலாம்?" data-prompt-en="Who can apply?" data-prompt-ml="ആർക്കൊക്കെ അപേക്ഷിക്കാം?" data-prompt-kn="ಯಾರು ಅರ್ಜಿ ಸಲ್ಲಿಸಬಹುದು?" data-prompt-te="ఎవరు దరఖాస్తు చేసుకోవచ్చు?" data-i18n="suggestTwo">யார் விண்ணப்பிக்கலாம்?</button>
+            <button type="button" class="suggestion" data-intent="apply" data-prompt-ta="நான் எப்படி விண்ணப்பிப்பது?" data-prompt-en="How do I apply?" data-prompt-ml="എങ്ങനെ അപേക്ഷിക്കാം?" data-prompt-kn="ನಾನು ಹೇಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಲಿ?" data-prompt-te="నేను ఎలా దరఖాస్తు చేయాలి?" data-i18n="suggestThree">எப்படி விண்ணப்பிப்பது?</button>
+          </div>
+        </div>
+        <form class="chat-form" id="chatForm">
+          <div class="input-row">
+            <button class="mic-button" id="micButton" type="button" aria-label="குரலில் பேச" aria-pressed="false">
+              <svg class="mic-icon"><use href="#i-mic"/></svg><span data-i18n="micButton">பேசு</span>
+            </button>
+            <label class="visually-hidden" for="messageInput" data-i18n="messageLabel">உங்கள் கேள்வியை எழுதுங்கள்</label>
+            <textarea id="messageInput" rows="1" maxlength="500" data-i18n-placeholder="inputPlaceholder" placeholder="உங்கள் கேள்வியை இங்கே எழுதுங்கள்…"></textarea>
+            <button class="send-button" type="submit" aria-label="கேள்வியை அனுப்பு"><svg><use href="#i-send"/></svg></button>
+          </div>
+          <div class="chat-under"><span id="voiceHint" data-i18n="voiceHint" aria-live="polite">மைக் பயன்படுத்த, முதலில் அனுமதி கேட்கப்படும்.</span><span id="charCount">0 / 500</span></div>
+        </form>
+      </div>
+      <div class="gemini-note"><span class="gemini-icon"><svg><use href="#i-spark"/></svg></span><span data-i18n-html="geminiNote"><strong>Gemini AI</strong> இயக்கப்பட்டால், உங்கள் கேள்வி பதில் உருவாக்க Google-க்கு அனுப்பப்படும். தனிப்பட்ட எண்களைப் பகிர வேண்டாம்.</span></div>
+    </section>
+
+    <section class="trust-section" id="trust" aria-labelledby="trustTitle">
+      <div class="wrap trust-layout">
+        <div class="trust-heading"><div class="section-kicker"><span>06</span><span data-i18n="trustKicker">நம்பிக்கையே அடிப்படை</span></div><h2 id="trustTitle" data-i18n-html="trustTitle">தெளிவான தகவல்.<br><em>உங்கள் கட்டுப்பாடு.</em></h2><p data-i18n="trustBody">அரசு சேவையை எளிதாகப் புரிய வைப்பதே எங்கள் பணி. உங்கள் சார்பில் விண்ணப்பிக்கவோ, உங்களின் தரவைச் சேமிக்கவோ மாட்டோம்.</p></div>
+        <div class="trust-cards">
+          <article class="trust-card"><span class="trust-card-icon"><svg><use href="#i-shield"/></svg></span><h3 data-i18n="trustCardOneTitle">முக்கிய எண்கள் கேட்கப்படாது</h3><p data-i18n="trustCardOneBody">ஆதார் எண், OTP, வங்கி எண், ரேஷன் அட்டை எண்—எதையும் இங்கே உள்ளிடாதீர்கள்.</p></article>
+          <article class="trust-card"><span class="trust-card-icon icon-lavender"><svg><use href="#i-book"/></svg></span><h3 data-i18n="trustCardTwoTitle">அரசு மூலத்தைக் காட்டுகிறோம்</h3><p data-i18n="trustCardTwoBody">திட்ட விதிகள் மாறலாம். முடிவெடுக்கும் முன் அதிகாரப்பூர்வ இணையதளத்தைச் சரிபார்க்கவும்.</p></article>
+          <article class="trust-card"><span class="trust-card-icon icon-sage"><svg><use href="#i-heart"/></svg></span><h3 data-i18n="trustCardThreeTitle">இறுதி முடிவு அரசுடையது</h3><p data-i18n="trustCardThreeBody">இந்த வழிகாட்டி ஒரு தொடக்க உதவி மட்டுமே. தகுதி அல்லது ஒப்புதலை அரசு தான் உறுதிப்படுத்தும்.</p></article>
+          <article class="trust-card"><span class="trust-card-icon icon-coral"><svg><use href="#i-mic"/></svg></span><h3 data-i18n="trustVoiceTitle">குரல் மற்றும் தனியுரிமை</h3><p data-i18n="trustVoiceBody">மைக்கைப் பயன்படுத்த அனுமதி கேட்கப்படும்; குரல் செயலாக்கம் உலாவி அல்லது சாதனத்தைப் பொறுத்தது.</p></article>
+        </div>
+        <aside class="pilot-note" aria-label="பயனர் கருத்துகள் பற்றிய அறிவிப்பு"><span class="pilot-note-mark">“</span><div><span class="pilot-label" data-i18n="pilotLabel">உண்மையான குரல்கள் · களச் சோதனைக்கு பின்</span><p data-i18n="pilotNote">இந்த prototype-இல் போலியான சான்றுரைகள் இல்லை. பெண்களுடன் சோதித்து, ஒப்புதல் பெற்ற உண்மையான கருத்துகளை மட்டுமே பின்னர் பகிர்வோம்.</p></div></aside>
+      </div>
+      <div class="wrap source-wrap">
+        <details class="sources-details">
+          <summary><svg><use href="#i-book"/></svg><span data-i18n="sourcesTitle">அரசு ஆதாரங்கள் & தகவல் எங்கிருந்து வருகிறது?</span><span class="summary-plus" aria-hidden="true">+</span></summary>
+          <div class="sources-content">
+            <p id="sourcesIntro" data-i18n="sourcesIntro">கீழே தேர்ந்தெடுத்த மாநிலத்தின் அதிகாரப்பூர்வ ஆதாரங்கள் உள்ளன. நடப்பு விதிகள், தேதிகள், விண்ணப்ப வழி ஆகியவற்றை அங்கே சரிபார்க்கவும்.</p>
+            <ul>
+              <li><a id="sourceLinkOne" href="https://kmut.tn.gov.in/about-kmut.html" target="_blank" rel="noopener noreferrer"><span id="sourceNameOne" data-i18n="sourceEligibility">திட்டம், தகுதி, விண்ணப்ப நடைமுறை</span><svg><use href="#i-external"/></svg></a></li>
+              <li><a id="sourceLinkTwo" href="https://kmut.tn.gov.in/faq.html" target="_blank" rel="noopener noreferrer"><span id="sourceNameTwo" data-i18n="sourceFaq">அதிகாரப்பூர்வ அடிக்கடி கேட்கப்படும் கேள்விகள்</span><svg><use href="#i-external"/></svg></a></li>
+              <li><a id="sourceLinkThree" href="https://kmut.tn.gov.in/" target="_blank" rel="noopener noreferrer"><span id="sourceNameThree" data-i18n="sourceHome">கலைஞர் மகளிர் உரிமைத் திட்டம் — தமிழ்நாடு அரசு</span><svg><use href="#i-external"/></svg></a></li>
+              <li><a id="sourceLinkFour" href="https://www.tnbudget.tn.gov.in/tnweb_files/BS_2025_26_ENG_FINAL.pdf" target="_blank" rel="noopener noreferrer"><span id="sourceNameFour" data-i18n="sourceBudget">தமிழ்நாடு அரசு · 2025–26 பட்ஜெட்</span><svg><use href="#i-external"/></svg></a></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark"><svg><use href="#i-flower"/></svg></span><span class="brand-name"><strong>நம்ம உரிமை</strong><small data-i18n="brandSub">ஒரு உரிமை. ஒரு எளிய வழி.</small></span></a>
+      <p data-i18n="footerDisclaimer">இது ஒரு சுயாதீன வழிகாட்டி prototype; தமிழ்நாடு அரசின் அதிகாரப்பூர்வ தளம் அல்ல. அரசு தளத்தில் விவரங்களை உறுதிசெய்து, அங்கே மட்டுமே விண்ணப்பிக்கவும்.</p>
+      <a class="footer-official" id="footerOfficialLink" href="https://kmut.tn.gov.in/" target="_blank" rel="noopener noreferrer"><span data-i18n="footerOfficial">அரசு தளம்</span><svg><use href="#i-external"/></svg></a>
+    </div>
+    <div class="wrap footer-bottom"><span data-i18n="footerTagline">ஒவ்வொரு பெண்ணுக்கும் புரியும் உரிமை.</span><span data-i18n="footerBuild">தமிழில் வடிவமைக்கப்பட்டது · குறைந்த இணையத்திற்கும் ஏற்றது</span><button class="install-button" id="installButton" type="button" hidden data-i18n="installButton">முகப்பில் சேர்க்கவும்</button></div>
+  </footer>
+
+  <dialog class="check-dialog" id="checkDialog" aria-labelledby="checkDialogTitle">
+    <div id="checkDialogContent"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="networkBanner" class="network-banner" role="status" hidden><svg><use href="#i-wifi"/></svg><span data-i18n="offlineNotice">இணையம் இல்லை. அடிப்படை வழிகாட்டி தொடர்ந்து கிடைக்கும்.</span></div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+{
+  "lastReviewed": "2026-10-01",
+  "states": {
+    "tn": {
+      "id": "tn",
+      "code": "TN",
+      "stateName": "Tamil Nadu",
+      "defaultLanguage": "ta",
+      "schemeName": "Kalaignar Magalir Urimai Thittam",
+      "schemeNative": "கலைஞர் மகளிர் உரிமைத் திட்டம்",
+      "schemeShort": "KMUT",
+      "detailLevel": "Detailed guide; verify latest government notice",
+      "color": "#dd785f",
+      "sources": [
+        {"title": "KMUT — Scheme and eligibility", "url": "https://kmut.tn.gov.in/about-kmut.html"},
+        {"title": "KMUT — Official FAQs", "url": "https://kmut.tn.gov.in/faq.html"},
+        {"title": "KMUT — Government of Tamil Nadu", "url": "https://kmut.tn.gov.in/"},
+        {"title": "Tamil Nadu Budget 2025–26", "url": "https://www.tnbudget.tn.gov.in/tnweb_files/BS_2025_26_ENG_FINAL.pdf"}
+      ],
+      "verifiedFacts": [
+        "The official Tamil Nadu budget for 2025–26 describes the scheme as ₹1,000 monthly assistance for eligible beneficiaries.",
+        "The official KMUT portal's basic criteria include an applicant aged 21 or older and family-head rules; it also describes income, agricultural-land and household-electricity limits, plus exclusions.",
+        "The KMUT guide gives threshold examples: annual family income below ₹2.5 lakh, wetland under 5 acres or dryland under 10 acres, and household electricity use below 3,600 units per year. The official eligibility page includes additional exclusions.",
+        "The official portal publishes scheme, eligibility and FAQ information. Registration windows and instructions can change; direct the user to the latest official notice."
+      ],
+      "guardrails": [
+        "The guide's basic criteria are only an initial explanation, not a decision or approval.",
+        "Never ask the user to type Aadhaar, OTP, bank, phone or ration-card numbers.",
+        "Do not promise that registration is currently open."
+      ],
+      "display": {
+        "ta": {"state": "தமிழ்நாடு", "summary": "தகுதியான குடும்பத் தலைவிகளுக்கான மாதாந்திர உரிமைத் தொகை", "benefit": "₹1,000 <small>/ மாதம்</small>", "benefitLabel": "தகுதி பெற்ற பெண்களுக்கு · அரசு உறுதிப்படுத்தும்"},
+        "ml": {"state": "തമിഴ്നാട്", "summary": "അർഹരായ കുടുംബനാഥ സ്ത്രീകൾക്കുള്ള പ്രതിമാസ ധനസഹായം", "benefit": "₹1,000 <small>/ മാസം</small>", "benefitLabel": "അർഹത സർക്കാർ സ്ഥിരീകരിക്കും"},
+        "kn": {"state": "ತಮಿಳುನಾಡು", "summary": "ಅರ್ಹ ಮಹಿಳಾ ಕುಟುಂಬ ಮುಖ್ಯಸ್ಥರಿಗೆ ಮಾಸಿಕ ನೆರವು", "benefit": "₹1,000 <small>/ ತಿಂಗಳು</small>", "benefitLabel": "ಅರ್ಹತೆಯನ್ನು ಸರ್ಕಾರ ದೃಢಪಡಿಸುತ್ತದೆ"},
+        "te": {"state": "తమిళనాడు", "summary": "అర్హులైన మహిళా కుటుంబ పెద్దలకు నెలవారీ సాయం", "benefit": "₹1,000 <small>/ నెల</small>", "benefitLabel": "అర్హతను ప్రభుత్వం నిర్ధారిస్తుంది"},
+        "en": {"state": "Tamil Nadu", "summary": "Monthly support for eligible women heads of family", "benefit": "₹1,000 <small>/ month</small>", "benefitLabel": "For eligible women · confirmed by government"}
+      }
+    },
+    "kl": {
+      "id": "kl",
+      "code": "KL",
+      "stateName": "Kerala",
+      "defaultLanguage": "ml",
+      "schemeName": "Kudumbashree",
+      "schemeNative": "കുടുംബശ്രീ",
+      "schemeShort": "Kudumbashree",
+      "detailLevel": "Community network information; not a cash-benefit eligibility checker",
+      "color": "#4e8c85",
+      "sources": [
+        {"title": "Kudumbashree — Membership", "url": "https://www.kudumbashree.org/pages/171"},
+        {"title": "Kudumbashree — Community structure", "url": "https://www.kudumbashree.org/pages/9"},
+        {"title": "Kerala Local Self Government Department", "url": "https://lsgd.kerala.gov.in/en/waste-management/supporting-institutions/kudumbashree/"}
+      ],
+      "verifiedFacts": [
+        "Kudumbashree is a women’s community network, not one single cash benefit.",
+        "Its community structure includes NHG, ADS and CDS tiers.",
+        "Official Kudumbashree membership information says adult women may join and limits membership to one woman per family."
+      ],
+      "guardrails": [
+        "Do not describe Kudumbashree as a universal monthly payment or promise a grant.",
+        "Local group availability, activities and support can vary; ask the local NHG or CDS and verify current official information.",
+        "Do not use the Tamil Nadu eligibility quiz for Kerala."
+      ],
+      "display": {
+        "ta": {"state": "கேரளம்", "summary": "பெண்கள் இணையும் சமூக வலைப்பின்னல் · ஒரே பண உதவி திட்டம் அல்ல", "benefit": "சமூக வலை", "benefitLabel": "NHG · ADS · CDS குழுக்கள் வழியாக இணைவு"},
+        "ml": {"state": "കേരളം", "summary": "സ്ത്രീകളുടെ കൂട്ടായ്മ ശൃംഖല · ഏകീകൃത പണസഹായ പദ്ധതി അല്ല", "benefit": "കുടുംബശ്രീ", "benefitLabel": "NHG · ADS · CDS കൂട്ടായ്മകളിലൂടെ"},
+        "kn": {"state": "ಕೇರಳ", "summary": "ಮಹಿಳೆಯರ ಸಮುದಾಯ ಜಾಲ · ಒಂದೇ ನಗದು ಯೋಜನೆ ಅಲ್ಲ", "benefit": "ಸಮುದಾಯ ಜಾಲ", "benefitLabel": "NHG · ADS · CDS ಗುಂಪುಗಳ ಮೂಲಕ"},
+        "te": {"state": "కేరళ", "summary": "మహిళల కమ్యూనిటీ నెట్‌వర్క్ · ఒకే నగదు పథకం కాదు", "benefit": "సమూహ నెట్‌వర్క్", "benefitLabel": "NHG · ADS · CDS సమూహాల ద్వారా"},
+        "en": {"state": "Kerala", "summary": "A women’s community network · not one cash-benefit scheme", "benefit": "Community network", "benefitLabel": "Connect through NHG · ADS · CDS groups"}
+      }
+    },
+    "ka": {
+      "id": "ka",
+      "code": "KA",
+      "stateName": "Karnataka",
+      "defaultLanguage": "kn",
+      "schemeName": "Gruha Lakshmi",
+      "schemeNative": "ಗೃಹಲಕ್ಷ್ಮಿ ಯೋಜನೆ",
+      "schemeShort": "Gruha Lakshmi",
+      "detailLevel": "Official service link; current eligibility and payment details need confirmation",
+      "color": "#be9250",
+      "sources": [
+        {"title": "Karnataka WCD — Gruhalakshmi scheme", "url": "https://dwcd.karnataka.gov.in/41/gruhalakshmi-scheme/en"},
+        {"title": "Karnataka Seva Sindhu services", "url": "https://sevasindhu.karnataka.gov.in/Sevasindhu/English"}
+      ],
+      "verifiedFacts": [
+        "Karnataka’s Women and Child Development department has a Gruhalakshmi scheme page and Seva Sindhu is the state service portal.",
+        "The department page could not be independently retrieved during this review, so current payment amount, exclusions, application availability and document rules are not asserted here."
+      ],
+      "guardrails": [
+        "Do not state ₹2,000 or a specific eligibility rule as a current verified fact in this guide.",
+        "Ask the user to open the official Women and Child Development or Seva Sindhu source and confirm the current notice.",
+        "Do not request Aadhaar, bank details or OTP in chat."
+      ],
+      "display": {
+        "ta": {"state": "கர்நாடகம்", "summary": "கிருஹலட்சுமி திட்டம் · நடப்பு தொகை / விதிகளை அரசு தளத்தில் சரிபார்க்கவும்", "benefit": "அரசு விதிகள்", "benefitLabel": "தற்போதைய தொகை மற்றும் தகுதி உறுதி செய்யப்பட வேண்டும்"},
+        "ml": {"state": "കർണാടക", "summary": "ഗൃഹലക്ഷ്മി പദ്ധതി · നിലവിലെ തുകയും നിയമങ്ങളും ഔദ്യോഗികമായി പരിശോധിക്കുക", "benefit": "ഔദ്യോഗിക നിബന്ധനകൾ", "benefitLabel": "നിലവിലെ തുകയും അർഹതയും സ്ഥിരീകരിക്കുക"},
+        "kn": {"state": "ಕರ್ನಾಟಕ", "summary": "ಗೃಹಲಕ್ಷ್ಮಿ ಯೋಜನೆ · ಇಂದಿನ ಮೊತ್ತ ಮತ್ತು ನಿಯಮಗಳನ್ನು ಅಧಿಕೃತವಾಗಿ ಪರಿಶೀಲಿಸಿ", "benefit": "ಅಧಿಕೃತ ನಿಯಮಗಳು", "benefitLabel": "ಪ್ರಸ್ತುತ ಮೊತ್ತ ಮತ್ತು ಅರ್ಹತೆ ದೃಢಪಡಿಸಬೇಕು"},
+        "te": {"state": "కర్ణాటక", "summary": "గృహలక్ష్మి పథకం · ప్రస్తుత మొత్తం, నియమాలను అధికారికంగా చూడండి", "benefit": "అధికారిక నియమాలు", "benefitLabel": "ప్రస్తుత మొత్తం, అర్హత నిర్ధారించాలి"},
+        "en": {"state": "Karnataka", "summary": "Gruha Lakshmi · confirm current amount and rules on the official source", "benefit": "Official rules", "benefitLabel": "Current amount and eligibility need confirmation"}
+      }
+    },
+    "ap": {
+      "id": "ap",
+      "code": "AP",
+      "stateName": "Andhra Pradesh",
+      "defaultLanguage": "te",
+      "schemeName": "Thalliki Vandanam",
+      "schemeNative": "తల్లికి వందనం",
+      "schemeShort": "Thalliki Vandanam",
+      "detailLevel": "Current initiative listed by a district education page; benefit details depend on student group",
+      "color": "#8477aa",
+      "sources": [
+        {"title": "Tirupati District — School Education", "url": "https://tirupati.ap.gov.in/departments/education/"},
+        {"title": "Tirupati District — Intermediate Education", "url": "https://tirupati.ap.gov.in/intermediate-education/"}
+      ],
+      "verifiedFacts": [
+        "The Tirupati district School Education page lists Thalliki Vandanam as a current initiative.",
+        "The Tirupati district Intermediate Education page states ₹15,000 for students at Government Junior Colleges; do not apply that amount to all students or households.",
+        "Amma Vodi is not presented here as a current statewide scheme; use the currently listed Thalliki Vandanam references and verify the relevant student group."
+      ],
+      "guardrails": [
+        "Never generalize the ₹15,000 figure beyond the Government Junior College students described on the source page.",
+        "Do not claim universal eligibility or that every school student receives support.",
+        "Check the current department notice for class, attendance, family and application conditions."
+      ],
+      "display": {
+        "ta": {"state": "ஆந்திரப் பிரதேசம்", "summary": "தல்லிக்கி வந்தனம் · மாணவர் வகை மற்றும் விதிகளைச் சரிபார்க்கவும்", "benefit": "கல்வி ஆதரவு", "benefitLabel": "மாணவர் குழுவைப் பொறுத்து விதிகள் மாறும்"},
+        "ml": {"state": "ആന്ധ്രപ്രദേശ്", "summary": "തല്ലിക്കി വന്ദനം · വിദ്യാർത്ഥി വിഭാഗവും നിലവിലെ നിയമങ്ങളും പരിശോധിക്കുക", "benefit": "വിദ്യാഭ്യാസ സഹായം", "benefitLabel": "വിദ്യാർത്ഥി വിഭാഗമനുസരിച്ച് നിയമങ്ങൾ മാറും"},
+        "kn": {"state": "ಆಂಧ್ರ ಪ್ರದೇಶ", "summary": "ತಲ್ಲಿಕಿ ವಂದನಂ · ವಿದ್ಯಾರ್ಥಿ ವರ್ಗ ಮತ್ತು ಇಂದಿನ ನಿಯಮ ಪರಿಶೀಲಿಸಿ", "benefit": "ಶಿಕ್ಷಣ ನೆರವು", "benefitLabel": "ವಿದ್ಯಾರ್ಥಿ ವರ್ಗದಂತೆ ನಿಯಮ ಬದಲಾಗಬಹುದು"},
+        "te": {"state": "ఆంధ్రప్రదేశ్", "summary": "తల్లికి వందనం · విద్యార్థి వర్గం, తాజా నియమాలు చూడండి", "benefit": "విద్యా సహాయం", "benefitLabel": "విద్యార్థి వర్గాన్ని బట్టి నియమాలు మారుతాయి"},
+        "en": {"state": "Andhra Pradesh", "summary": "Thalliki Vandanam · check the student group and current rules", "benefit": "Education support", "benefitLabel": "Rules vary by student group"}
+      }
+    },
+    "tg": {
+      "id": "tg",
+      "code": "TG",
+      "stateName": "Telangana",
+      "defaultLanguage": "te",
+      "schemeName": "Kalyana Lakshmi / Shaadi Mubarak",
+      "schemeNative": "కళ్యాణ లక్ష్మి / షాదీ ముబారక్",
+      "schemeShort": "Kalyana Lakshmi",
+      "detailLevel": "Official ePASS service; category-specific rules and limits must be checked",
+      "color": "#6e8498",
+      "sources": [
+        {"title": "Telangana ePASS — Kalyana Lakshmi services", "url": "https://telanganaepass.cgg.gov.in/KalyanaLakshmiLinks.jsp"},
+        {"title": "Telangana ePASS — Official portal", "url": "https://telanganaepass.cgg.gov.in/"},
+        {"title": "Suryapet District — Kalyana Lakshmi", "url": "https://suryapet.telangana.gov.in/scheme/kalyana-lakshmi-scheme/"}
+      ],
+      "verifiedFacts": [
+        "The official Telangana ePASS page lists Kalyana Lakshmi services for SC, ST, BC and EBC applicants, and Shaadi Mubarak services for minorities.",
+        "The portal displays category-specific income limits and application/status links; limits and documents vary by category.",
+        "The official page includes a note about updating the bride’s mother’s bank-account details."
+      ],
+      "guardrails": [
+        "Do not state one universal income limit or benefit amount; category-specific current rules must be checked on ePASS.",
+        "Do not claim the user qualifies based on a chat. Direct them to the correct official category page.",
+        "Never request bank details, Aadhaar or OTP in chat."
+      ],
+      "display": {
+        "ta": {"state": "தெலங்கானா", "summary": "கல்யாண லட்சுமி / ஷாதி முபாரக் · பிரிவு வாரியாக விதிகள்", "benefit": "திருமண உதவி", "benefitLabel": "சாதி / வருமானப் பிரிவைப் பொறுத்து விதிகள் மாறும்"},
+        "ml": {"state": "തെലങ്കാന", "summary": "കല്യാണ ലക്ഷ്മി / ഷാദി മുബാറക് · വിഭാഗം അനുസരിച്ച് നിബന്ധനകൾ", "benefit": "വിവാഹ സഹായം", "benefitLabel": "വിഭാഗവും വരുമാനപരിധിയും അനുസരിച്ച് നിയമങ്ങൾ മാറും"},
+        "kn": {"state": "ತೆಲಂಗಾಣ", "summary": "ಕಲ್ಯಾಣ ಲಕ್ಷ್ಮಿ / ಶಾದಿ ಮುಬಾರಕ್ · ವರ್ಗಾನುಸಾರ ನಿಯಮಗಳು", "benefit": "ವಿವಾಹ ನೆರವು", "benefitLabel": "ವರ್ಗ ಮತ್ತು ಆದಾಯ ಮಿತಿಯಂತೆ ನಿಯಮಗಳು ಬದಲಾಗುತ್ತವೆ"},
+        "te": {"state": "తెలంగాణ", "summary": "కళ్యాణ లక్ష్మి / షాదీ ముబారక్ · వర్గాన్ని బట్టి నియమాలు", "benefit": "వివాహ సహాయం", "benefitLabel": "వర్గం, ఆదాయ పరిమితిని బట్టి నియమాలు మారుతాయి"},
+        "en": {"state": "Telangana", "summary": "Kalyana Lakshmi / Shaadi Mubarak · rules vary by category", "benefit": "Marriage support", "benefitLabel": "Rules vary by category and income limit"}
+      }
+    }
+  }
+}
