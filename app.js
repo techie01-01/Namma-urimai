@@ -2,11 +2,16 @@
 /* 10-MIN FIX */
 global.window = global;
 global.document = {
-  createElement: () => ({ style: {}, appendChild: () => {}, setAttribute: () => {} }),
-  title: '', body: { appendChild: () => {}, style: {} },
-  getElementById: () => null, querySelector: () => null,
-  querySelectorAll: () => [], head: { appendChild: () => {} }
+  createElement: (t) => ({ style: {}, appendChild: () => {}, setAttribute: () => {}, addEventListener: () => {}, tagName: t || 'div', innerHTML: '', className: '' }),
+  title: '', body: { appendChild: () => {}, style: {} }, head: { appendChild: () => {} },
+  getElementById: () => null, querySelector: () => null, querySelectorAll: () => [], documentElement: { style: {} }
 };
+global.navigator = { userAgent: 'node', platform: 'node' };
+global.localStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} };
+global.screen = { width: 1024, height: 768 };
+global.matchMedia = () => ({ matches: false, addListener: () => {}, removeListener: () => {} });
+global.requestAnimationFrame = (cb) => setTimeout(cb, 16);
+global.cancelAnimationFrame = (id) => clearTimeout(id);
 global.navigator = { userAgent: 'node' };
 global.localStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} };
 global.screen = { width: 1024, height: 768 };
